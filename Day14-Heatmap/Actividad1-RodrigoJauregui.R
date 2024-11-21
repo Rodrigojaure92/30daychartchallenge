@@ -10,7 +10,7 @@ library(nnet)
 library(caret)
 
 #1. Cargar el dataset y ver cantidad de datos
-dataset <- read.csv("https://raw.githubusercontent.com/Rodrigo931d/Viu/main/AirQuality.csv", header = TRUE, sep=";")
+dataset <- read.csv("https://github.com/Rodrigojaure92/30daychartchallenge/raw/refs/heads/main/Day14-Heatmap/AirQuality.csv", header = TRUE, sep=";")
 dataset <- dataset %>% select(-X, -X.1)
 cat("La cantidad de columnas es", ncol(dataset), "y sus nombres son:", paste(names(dataset), collapse = ", "), "\n");
 cat("Número de filas:", nrow(dataset), "\n");
